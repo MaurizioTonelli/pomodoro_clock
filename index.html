@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a050e5e875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1> Pomodoro Timer</h1>
+    <div class="settings">
+        <div class="row">
+            <span class="text">Session</span>
+            <span class="text">Break</span>
+        </div>
+        <div class="row">
+            <button id="up-session" ><i class="fa fa-chevron-up"></i></button i>
+            <span class="number" id="selected-session">25</span>
+            <button id="down-session"><i class="fa fa-chevron-down"></i></button>
+            <button id="up-break"><i class="fa fa-chevron-up"></i></button>
+            <span class="number" id="selected-break">5</span>
+            <button id="down-break"><i class="fa fa-chevron-down"></i></button>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="row">
+            <button id="play"><i class="fa fa-play"></i></button>
+            <button id="reset"><i class="fas fa-redo-alt"></i></button>
+        </div>
+        <div class="row">
+            <span class="text" id="current-mode">Session</span>
+        </div>
+        <div class="row">
+            <span class="number" id="current-time">25:00</span>
+        </div>
+        <div class="row">
+            <button id="pause"><i class="fas fa-pause"></i></button>
+            <button id="stop"><i class="fas fa-stop"></i></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
